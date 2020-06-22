@@ -19,7 +19,7 @@ jobs:
           name: Running unit tests
           command: |
             mkdir -p test-results/kaocha
-            bin/kaocha
+            bin/kaocha --reporter kaocha.report/documentation
       - store_test_results:
           path: test-results
       - store_artifacts:
