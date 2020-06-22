@@ -1,0 +1,4 @@
+;; tests.edn
+#kaocha/v1
+    {:plugins [:kaocha.plugin/junit-xml :kaocha.plugin/profiling]
+     :kaocha.plugin.junit-xml/target-file "test-results/kaocha/results.xml"}
