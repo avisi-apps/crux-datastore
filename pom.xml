@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>avisi.crux</groupId>
+  <groupId>avisi-apps</groupId>
   <artifactId>datastore</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <name>datastore</name>
@@ -19,9 +19,9 @@
     </developer>
   </developers>
   <scm>
-    <url>https://github.com/avisi.crux/datastore</url>
-    <connection>scm:git:git://github.com/avisi.crux/datastore.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/avisi.crux/datastore.git</developerConnection>
+    <url>https://github.com/avisi-apps/crux-datastore</url>
+    <connection>scm:git:git://github.com/avisi-apps/crux-datastore.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/avisi-apps/datastore.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
   <dependencies>
