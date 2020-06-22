@@ -35,22 +35,27 @@ Simple datastore configuration without a persisten KV store implementation:
 
 Run test
 ```
-    $ clojure -A:test:runner
+$ clojure -A:test:runner
 ```
 
 Build a deployable jar of this library:
 ```
-    $ clojure -A:jar
+$ clojure -A:jar
 ```
 
 Install it locally:
 ```
-    $ clojure -A:install
+$ clojure -A:install
 ```
 
 Deploy it to Clojars -- needs `CLOJARS_USERNAME` and `CLOJARS_PASSWORD` environment variables:
 ```
-    $ clojure -A:deploy
+$ clojure -A:deploy
+```
+
+Run formatting:
+```
+$ clojure -A:lint:fix
 ```
 ## License
 
