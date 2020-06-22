@@ -4,13 +4,14 @@
         com.google.cloud/google-cloud-datastore {:mvn/version "1.102.4"}}
  :aliases
  {:test {:extra-paths ["test"]
-         :extra-deps {org.clojure/test.check {:mvn/version "1.0.0"}}}
-  :runner
-  {:extra-deps {com.cognitect/test-runner
-                {:git/url "https://github.com/cognitect-labs/test-runner"
-                 :sha "f7ef16dc3b8332b0d77bc0274578ad5270fbfedd"}}
-   :main-opts ["-m" "cognitect.test-runner"
-               "-d" "test"]}
+         :extra-deps {org.clojure/test.check {:mvn/version "1.0.0"}
+                      lambdaisland/kaocha {:mvn/version "0.0-601"}
+                      lambdaisland/kaocha-junit-xml {:mvn/version "0.0-70"}
+                      lambdaisland/kaocha-cloverage {:mvn/version "0.0-32"}}}
+  :lint {:extra-deps {avisi-apps/fmt {:git/url "git@github.com:avisi-apps/fmt.git"
+                                      :sha "bb48a698ecaed24d299c8b125447dc5674a47725"}}
+         :main-opts ["-m" "avisi-apps.fmt.main" "check"]}
+  :fix {:main-opts ["-m" "avisi-apps.fmt.main" "fix"]}
   :jar {:extra-deps {seancorfield/depstar {:mvn/version "1.0.94"}}
         :main-opts ["-m" "hf.depstar.jar" "datastore.jar"]}
   :install {:extra-deps {deps-deploy {:mvn/version "0.0.9"}}
